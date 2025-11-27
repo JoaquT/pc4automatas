@@ -1,0 +1,12 @@
+--- Iniciando Prueba de Gramatica ---
+
+Generando 3 historias aleatorias:
+
+Historia 1: la perro perseguia el nino 
+Historia 2: el nino perseguia al gato sino el nina perseguia al gato y al perro perseguia el perro 
+Historia 3: el gato perseguia el perro 
+
+Estado de los contadores de <articulo> (deben ser diferentes de 1):
+5 <articulo> -> el
+10 <articulo> -> la
+8 <articulo> -> al

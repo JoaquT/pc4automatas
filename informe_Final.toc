@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Especificación}{3}{section.1}%
+\contentsline {section}{\numberline {2}Clase Aleatorio (Park--Miller)}{3}{section.2}%
+\contentsline {section}{\numberline {3}Clases Regla y Gramatica}{3}{section.3}%
+\contentsline {section}{\numberline {4}Comportamiento de los contadores}{4}{section.4}%
+\contentsline {section}{\numberline {5}Ejemplo de salida (ejecutando \texttt {probar\_gramatica()})}{5}{section.5}%
+\contentsline {section}{\numberline {6}Observaciones y recomendaciones}{5}{section.6}%

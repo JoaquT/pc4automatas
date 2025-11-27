@@ -1,0 +1,218 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+
+
+\usepackage{xcolor}
+
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{listingsutf8}
+\usepackage{caption}
+
+\lstset{
+  inputencoding=utf8,
+  extendedchars=true
+}
+% Definir estilo para listings de Python con fondo negro
+\definecolor{bg}{RGB}{20,20,20}
+\definecolor{lightgray}{RGB}{220,220,220}
+\lstdefinestyle{pyblack}{
+  language=Python,
+  backgroundcolor=\color{bg},
+  basicstyle=\ttfamily\color{lightgray}\scriptsize,
+  keywordstyle=\color{cyan},
+  stringstyle=\color{orange},
+  commentstyle=\color{gray},
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{black},
+  xleftmargin=0.5em,
+  xrightmargin=0.5em
+}
+
+\lstdefinestyle{consoleblack}{
+    language={}, % no syntax highlighting
+    backgroundcolor=\color{bg},
+    basicstyle=\ttfamily\color{lightgray}\scriptsize,
+    showstringspaces=false,
+    showtabs=false,
+    showspaces=false,
+    breaklines=true,
+    breakatwhitespace=false,
+    frame=single,
+    rulecolor=\color{black},
+    xleftmargin=0.5em,
+    xrightmargin=0.5em,
+    aboveskip=0.6em,
+    belowskip=0.6em,
+    columns=fullflexible,
+    keepspaces=true,
+    upquote=true
+    inputencoding=utf8,
+    extendedchars=true
+    }
+
+
+
+%Definición de márgenes y encabezados y pies de página
+\geometry{a4paper, margin=2.5cm}
+\setlength{\headheight}{14.61858pt}
+
+% Definición de comandos personalizados
+\newcommand\NomFacu{FACULTAD DE CIENCIAS}
+\newcommand\CodCurso{CC321}
+\newcommand\NomCurso{TEORÍA DE AUTÓMATAS, LENGUAJES Y COMPUTACIÓN}
+\newcommand\NomEscuela{ESCUELA DE CIENCIAS DE LA COMPUTACIÓN}
+\newcommand\NumPractica{4}
+\newcommand\NomTrabajo{Practica \NumPractica}
+\newcommand\NomCompTrabajo{Implementación de Gramáticas y Generador Pseudoaleatorio}
+
+\newcommand\NomSeccion{A}
+\newcommand\DiayHora{viernes 21 de noviembre, 2:00 p.m.}
+\newcommand\ProfesorUno{- MELCHOR ESPINOZA, Victor Andrés}
+\newcommand\ProfesorDos{}
+\newcommand\FechaEntrega{miércoles 26 de noviembre del 2025}
+\newcommand\NomAlUno{DELGADO ROMERO, Gustavo}
+\newcommand\CodAlUno{20235009B}
+\newcommand\NomAlDos{TORRES REATEGUI, Joaquín}
+\newcommand\CodAlDos{20212661E}
+\newcommand\NomAlTres{}
+\newcommand\CodAlTres{}
+\newcommand\CicloActual{2025-II}
+
+\graphicspath{ {imagenes/} } % Directorio de imágenes
+
+% Configuración de encabezados y pies de página
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[R]{\CicloActual}
+\fancyhead[L]{\CodCurso - \NomCurso}
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\NomFacu}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+
+\begin{document}
+%Título
+\begin{titlepage}
+    \centering
+        {\bfseries\LARGE \textbf{UNIVERSIDAD NACIONAL DE INGENIERÍA} \par}
+        \vspace{0.5cm}
+        {\scshape\Large \NomFacu \par}
+        \vspace{0.5cm}
+        {\scshape\Large \NomCurso \hspace{2cm} \CodCurso \par}
+        \vspace{0.5cm}
+            \begin{figure}[h]
+                \includegraphics[width=5cm]{LogoUNI.png}
+                \centering
+            \end{figure}
+        {\scshape\Large \NomEscuela \par}
+        \vspace{0.5cm}
+        {\scshape\Large \NomTrabajo \par}
+        {\scshape\LARGE 
+            \textbf{\NomCompTrabajo} \par}
+        \vspace{0.5cm}
+            \begin{center}
+                \begin{tabularx}{\textwidth} { 
+                >{\raggedright\arraybackslash}m{3cm} 
+                >{\raggedleft\arraybackslash}X  }
+                {\Large  \textbf{Sección:} \normalsize \NomSeccion } &  {\Large  \textbf{Día y Hora:} \normalsize \DiayHora }  \\
+            \end{tabularx}
+        \end{center}
+    
+        {\Large \RaggedRight \hspace{0.05cm}  
+            \textbf{Número de práctica:} \NumPractica \par}
+    \vfill
+        \begin{center}
+            \begin{tabularx}{0.9\textwidth} { 
+                 >{\raggedright\arraybackslash}X 
+                 >{\raggedleft\arraybackslash}X  }
+                \textbf{Apellidos y Nombres} & \textbf{Código de alumno} \\ [0.5ex] 
+                \hline\hline
+                \NomAlUno & \CodAlUno\\ 
+                \NomAlDos & \CodAlDos\\ 
+                [0.5ex] 
+                \hline
+            \end{tabularx}
+        \end{center}
+    \vfill
+    {\normalsize \RaggedRight \hspace{0.05cm}  
+        \textbf{Nombre de los Docentes:} \\
+        \hspace{0.05cm} -\ProfesorUno \\
+        \hspace{0.05cm} -\ProfesorDos
+        \par}
+    \vspace{0.5cm}
+    {\normalsize \RaggedRight \hspace{0.05cm}  
+        \textbf{Fecha de entrega del informe:} \FechaEntrega \par}
+    \vfill
+    {\Large \CicloActual \par}
+\end{titlepage}
+\pagestyle{fancy}
+
+% Introducción
+\section*{Introducción}
+Este informe documenta la implementación de una gramática libre de contexto para generar historias simples y un generador de enteros pseudoaleatorios basado en el algoritmo Park--Miller. Se incluyen descripciones de diseño, fragmentos de código relevantes y ejemplos de salida.
+\newpage
+
+\tableofcontents
+\newpage
+\section{Especificación}
+La gramática utilizada (símbolos no terminales entre \texttt{< >}):
+\begin{itemize}
+  \item \texttt{<inicio> -> <historia>}
+  \item \texttt{<historia> -> <frase> | <frase> y <historia> | <frase> sino <historia>}
+  \item \texttt{<frase> -> <articulo> <sustantivo> <verbo> <articulo> <sustantivo>}
+  \item \texttt{<articulo> -> el | la | al}
+  \item \texttt{<sustantivo> -> gato | niño | perro | niña}
+  \item \texttt{<verbo> -> perseguia | besaba}
+\end{itemize}
+
+\section{Clase Aleatorio (Park--Miller)}
+La implementación sigue el multiplicador 16807 y módulo $2^{31}-1=2147483647$. Se proporciona un método para generar el siguiente valor y otro para obtener un entero dentro de un límite.
+
+\subsection*{Fragmento de \texttt{pseudointegers.py}}
+
+\lstinputlisting[firstline=1, lastline=10,style=pyblack]{pseudointegers.py}
+
+\section{Clases Regla y Gramatica}
+La clase \texttt{Regla} almacena \texttt{left}, \texttt{right} (tupla de símbolos) y \texttt{cont} (contador, iniciado en 1). El método \texttt{\_\_repr\_\_} devuelve una representación textual del tipo "C L -> R1 R2 ...".
+
+La clase \texttt{Gramatica} mantiene un diccionario de listas de reglas por símbolo izquierdo y un generador pseudoaleatorio. La selección de regla hace lo siguiente:
+\begin{enumerate}
+    \item Suma los contadores de las reglas disponibles (\texttt{total}).
+    \item Pide un índice aleatorio en el rango $[0,\; total-1]$ \\ mediante \texttt{siguiente\_entero(total)}.
+    \item Recorre las reglas restando su \texttt{cont} del índice hasta que el índice sea $\le 0$; la regla en ese punto es la elegida.
+    \item Incrementa en 1 el \texttt{cont} de todas las reglas NO elegidas (comportamiento intencional documentado en este informe).
+\end{enumerate}
+
+\subsection*{Fragmentos de \texttt{gramatica.py}}
+\lstinputlisting[firstline=2, lastline=58,style=pyblack]{gramatica.py}
+
+\section{Comportamiento de los contadores}
+El diseño incrementa los contadores de las reglas no elegidas, lo que favorece la selección de alternativas diferentes en iteraciones sucesivas: esta es una elección de política deliberada para diversificar las producciones generadas.
+
+\section{Ejemplo de salida (ejecutando \texttt{probar\_gramatica()})}
+Debido a la semilla fija (\texttt{seed=12345}), la ejecución típica genera tres historias aleatorias y muestra los contadores finales de \texttt{<articulo>}. Un ejemplo (ilustrativo) sería:
+
+\lstinputlisting[firstline=1, lastline=12, style=consoleblack]{salida.txt}
+
+\section{Observaciones y recomendaciones}
+\begin{itemize}
+  \item La semilla no está protegida contra el valor 0; si se desea, validar que la semilla esté en $[1,2^{31}-2]$.
+  \item La función \texttt{generar} añade un espacio tras cada terminal; puede recortarse el resultado final con \texttt{strip()} para evitar espacio final.
+\end{itemize}
+
+\section*{Conclusión}
+Se implementó una versión funcional de la gramática y del generador Park--Miller; el diseño de actualización de contadores se documentó como intencional para favorecer la diversidad de producciones. El código incluido es suficiente para replicar las pruebas de la práctica.
+
+\end{document}
