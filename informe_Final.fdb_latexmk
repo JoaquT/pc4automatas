@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1764213473.29216 "d:/02.Estudios/1.UNI/CC321 TALC/Talleres y trabajos/pc4automatas/informe_Final.tex" "informe_Final.pdf" "informe_Final" 1764213474.31738 0
+["pdflatex"] 1764357753.22807 "d:/02.Estudios/1.UNI/CC321 TALC/Talleres y trabajos/pc4automatas/informe_Final.tex" "informe_Final.pdf" "informe_Final" 1764357755.23524 0
   "C:/Users/gusta/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762705164 83665 e74152440a79c80045ec5ef3cd1f6917 ""
   "C:/Users/gusta/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1749159036 31952 522d934c218813c57575940e964da4a8 ""
   "C:/Users/gusta/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1749159038 40136 fed228276d8ad94c18f51439a12af20f ""
@@ -128,12 +128,12 @@
   "C:/Users/gusta/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/gusta/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "d:/02.Estudios/1.UNI/CC321 TALC/Talleres y trabajos/pc4automatas/informe_Final.tex" 1764213472 8531 d31ef8b48049d57f7417fdd7c05d4bc7 ""
-  "gramatica.py" 1764206819 3633 9212f1e708044108a1269a0009da41a2 ""
+  "gramatica.py" 1764357751 3777 79dffe234e81bd9bfef803957a066009 ""
   "imagenes/LogoUNI.png" 1763140347 13089 3d6773e7ccd806c1670f73985b8cbb31 ""
-  "informe_Final.aux" 1764213474 1443 502269aed2d823a12c19a79fcfddefdd "pdflatex"
-  "informe_Final.out" 1764213474 1222 a116dc217febe732c8528cf0700a25d7 "pdflatex"
+  "informe_Final.aux" 1764357754 1443 502269aed2d823a12c19a79fcfddefdd "pdflatex"
+  "informe_Final.out" 1764357754 1222 a116dc217febe732c8528cf0700a25d7 "pdflatex"
   "informe_Final.tex" 1764213472 8531 d31ef8b48049d57f7417fdd7c05d4bc7 ""
-  "informe_Final.toc" 1764213474 558 3b73b385751ac6d9ce3e54577c298bc5 "pdflatex"
+  "informe_Final.toc" 1764357754 558 3b73b385751ac6d9ce3e54577c298bc5 "pdflatex"
   "pseudointegers.py" 1764206819 448 5a9a1b7ce153d498cba0aa1d1340bd3d ""
   "salida.txt" 1764213376 391 ca6cb36d93017a6dde4bf7f31adfb2a3 ""
   (generated)

@@ -1,4 +1,5 @@
 from pseudointegers import Aleatorio
+import numpy as np
 class Gramatica:
     def __init__(self,seed):
         self.diccionario = {}
@@ -56,11 +57,18 @@ class Regla:
     def __repr__(self):
         derecha = " ".join(self.right)
         return f"{self.cont} {self.left} -> {derecha}"
-    
+
+
+
+
+
 def probar_gramatica():
     print("--- Iniciando Prueba de Gramática ---")
-    
-    g = Gramatica(seed=12345)
+    #Definir semilla como número aleatorio
+    aleatorio = np.random.randint(0, 10000)
+
+    # 1. Crear la gramática
+    g = Gramatica(seed=aleatorio)
 
     # <inicio> -> <historia>
     g.agregar_regla(Regla('<inicio>', ('<historia>',)))
